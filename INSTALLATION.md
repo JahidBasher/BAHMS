@@ -4,12 +4,12 @@ This installs **branch-aware persistent research memory** into an existing proje
 
 ## One-time installation (macOS / Linux)
 
-1. Clone this repository (for example, `git clone https://github.com/YOUR_USERNAME/bahms.git ~/Tools/bahms`).
+1. Clone this repository (for example, `git clone https://github.com/JahidBasher/BAHMS.git ~/Tools/BAHMS`).
 2. In VS Code, open your **existing** research project folder (not the extracted add-on folder).
 3. Open **Terminal → New Terminal** and run:
 
 ```bash
-python3 ~/Tools/bahms/install_bahms.py .
+python3 ~/Tools/BAHMS/install_bahms.py .
 ```
 
 Replace the path if you extracted elsewhere. `.` means *the current existing project folder*. Python 3.10+ is required, with an SQLite build that has FTS5 (the normal CPython distribution does).
@@ -17,7 +17,7 @@ Replace the path if you extracted elsewhere. `.` means *the current existing pro
 You can install into multiple projects from any directory:
 
 ```bash
-python3 ~/Tools/bahms/install_bahms.py \
+python3 ~/Tools/BAHMS/install_bahms.py \
   ~/Research/project-one ~/Research/project-two
 ```
 
@@ -106,3 +106,9 @@ A checkpoint automatically writes a portable JSON snapshot in `.bahms/shared/mem
 ## Scope
 
 The add-on supports persistent research branches and lightweight bounded retrieval. It is not an autonomous research platform, a reliable one-million-token reasoning engine, or a production multi-user database. Existing project documents are preserved, not bulk-imported. Improvements beyond the MVP should be measured using task success and provenance correctness, not just cache hit rate.
+
+## Further reading
+
+- [Architecture and cache semantics](docs/ARCHITECTURE.md)
+- [Claude Code ↔ Codex research workflows](docs/WORKFLOWS.md)
+- [Full CLI reference](docs/COMMAND_REFERENCE.md)
