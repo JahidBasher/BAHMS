@@ -1,0 +1,20 @@
+# Python / tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.env
+.env.*
+!.env.example
+.DS_Store
+
+# Private runtime state when BAHMS is installed in this repo
+.bahms/data/
+.bahms/shared/
+.bahms/export/
+workspace/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+
+# Research data and artifacts should be versioned intentionally, not automatically
